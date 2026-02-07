@@ -1,0 +1,16 @@
+<%- include("partials/header") %>
+
+<h2><%= post.title %></h2>
+<p class="date">Created: <%= post.createdAt %></p>
+
+<p><%= post.content %></p>
+
+<div class="actions">
+  <a href="/posts/<%= post.id %>/edit" class="btn">EDIT</a>
+
+  <form action="/posts/<%= post.id %>/delete" method="POST">
+    <button class="btn danger">DELETE</button>
+  </form>
+</div>
+
+<%- include("partials/footer") %>
