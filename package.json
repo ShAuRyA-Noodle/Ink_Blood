@@ -13,6 +13,12 @@
   "dependencies": {
     "ejs": "^4.0.1",
     "express": "^5.2.1",
-    "uuid": "^13.0.0"
+    "uuid": "^13.0.1"
+  },
+  "overrides": {
+    "brace-expansion": "^2.0.3",
+    "minimatch": ">=9.0.7",
+    "path-to-regexp": "^8.4.0",
+    "qs": "^6.14.2"
   }
 }
