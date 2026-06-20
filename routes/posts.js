@@ -40,11 +40,20 @@ router.get("/posts/:id", (req, res) => {
 
 router.get("/posts/:id/edit", (req, res) => {
   const post = posts.find(p => p.id === req.params.id);
+
+  if (!post) {
+    return res.send("Post not found");
+  }
+
   res.render("edit", { post });
 });
 
 router.post("/posts/:id", (req, res) => {
   const post = posts.find(p => p.id === req.params.id);
+
+  if (!post) {
+    return res.send("Post not found");
+  }
 
   post.title = req.body.title;
   post.content = req.body.content;

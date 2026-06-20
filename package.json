@@ -1,13 +1,20 @@
 {
-  "name": "section_26-capstone-blog-project",
+  "name": "ink_blood",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A minimalist blog-style web app built with Node.js, Express, and EJS. Full CRUD, in-memory storage, dark Squid Game inspired aesthetic.",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "nodejs",
+    "express",
+    "ejs",
+    "blog",
+    "crud"
+  ],
+  "author": "ShAuRyA-Noodle",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
@@ -17,7 +24,7 @@
   },
   "overrides": {
     "brace-expansion": "^2.0.3",
-    "minimatch": ">=9.0.7",
+    "minimatch": "^10.2.5",
     "path-to-regexp": "^8.4.0",
     "qs": "^6.14.2"
   }
